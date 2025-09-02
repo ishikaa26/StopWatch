@@ -1,0 +1,93 @@
+* {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex; align-items: center; justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+    }
+
+  
+    .stopwatch-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      text-align: center;
+      width: 380px;
+      transition: 0.3s ease;
+    }
+
+    .stopwatch-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+    }
+
+    
+    .time-display {
+      font-size: 3.2rem;
+      font-weight: bold;
+      margin-bottom: 1.8rem;
+      color: #00e676;
+      text-shadow: 0 0 12px rgba(0, 230, 118, 0.8);
+    }
+
+    
+    .controls {
+      display: flex; justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      flex: 1; margin: 0 5px;
+      padding: 12px 18px;
+      border: none; border-radius: 12px;
+      font-size: 1rem; font-weight: 500;
+      cursor: pointer; transition: 0.3s;
+      color: #fff;
+    }
+
+    button:hover {
+      transform: translateY(-2px) scale(1.05);
+      opacity: 0.9;
+    }
+
+    .start { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+    .pause { background: linear-gradient(135deg, #f39c12, #e67e22); }
+    .reset { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+    .lap   { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+
+    
+    .laps {
+      max-height: 220px; overflow-y: auto;
+      margin-top: 1.2rem; text-align: left;
+      padding-right: 8px;
+    }
+
+    .laps::-webkit-scrollbar { width: 6px; }
+    .laps::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.2);
+      border-radius: 4px;
+    }
+
+    .lap-item {
+      padding: 8px 10px;
+      border-left: 4px solid #00e676;
+      margin-bottom: 8px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      display: flex; justify-content: space-between;
+    }
+
+    .lap-item:nth-child(odd) {
+      background: rgba(255,255,255,0.12);
+    }
+    #footer{
+      margin: 100px;
+      padding: 200px;
+    }
